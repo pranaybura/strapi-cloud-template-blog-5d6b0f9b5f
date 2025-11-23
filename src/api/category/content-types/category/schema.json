@@ -26,6 +26,12 @@
     },
     "description": {
       "type": "text"
+    },
+    "Job": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::job.job",
+      "inversedBy": "Categories"
     }
   }
 }
